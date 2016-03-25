@@ -4,9 +4,6 @@ $(document).ready(function(){
 		navigation: true,
 		navigationPosition: 'right',
 		scrollOverflow:true,
-		// autoScrolling:true,
-		// scrollBar:true,
-		//sectionsColor : ['#ccc', '#fff','#ddd','#333','#777'],
 		fixedElements: '#nav, #fixedImg',
 		onLeave:function(index,nextindex){
 			if(nextindex == 4||nextindex == 5){
