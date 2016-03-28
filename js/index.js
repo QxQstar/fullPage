@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$("#fullPage").fullpage({
-		anchors:['Page1', 'Page2','Page3','Page4','Page5'],
+		anchors:['Page0','Page1', 'Page2','Page3','Page4','Page5'],
 		navigation: true,
 		navigationPosition: 'right',
 		scrollOverflow:true,
@@ -13,11 +13,11 @@ $(document).ready(function(){
 			// 	hiddenP4Img();
 			// }
 			switch(index){
-				case 1:hiddendescription1();break;
-				case 2:hiddendescription2();break;
-				case 3:hiddendescription3();break;
-				case 4:hiddendescription4();break;
-				case 5:hiddendescription5();break;
+				case 2:hiddendescription1();break;
+				case 3:hiddendescription2();break;
+				case 4:hiddendescription3();break;
+				case 5:hiddendescription4();break;
+				case 6:hiddendescription5();break;
 			}
 		},
 		afterLoad:function(link,index){
@@ -28,22 +28,33 @@ $(document).ready(function(){
 			// 	occurFixedImg();
 			// }
 			switch(index){
-				case 1: occurdescription1();hiddendescription();break;
-				case 2: occurdescription2();
+				case 2: occurdescription1();hiddendescription();break;
+				case 3: occurdescription2();
 				//hiddendescription1();
 				break;
-				case 3: occurdescription3();
+				case 4: occurdescription3();
 				//hiddendescription2();
 				break;
-				case 4: occurdescription4();
+				case 5: occurdescription4();
 				//hiddendescription3();
 				break;
-				case 5: occurdescription5();
+				case 6: occurdescription5();
 				//hiddendescription4();
 				break;
 			}
 		},
 	});
+var frameCartoon1 = new FrameCartoon({
+            el: '#section1',
+            frameNum: 12,
+            framerate: 2,
+            url: 'img/page2.png',
+            direction: 'horizontal',
+            iteration: 1,
+            complete: function(count){
+            }
+        });
+        frameCartoon1.start();
 });
 var span = document.getElementsByTagName('span');
 span[0].onclick = function(){
