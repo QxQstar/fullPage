@@ -28,8 +28,8 @@ $(document).ready(function(){
 			// 	occurFixedImg();
 			// }
 			switch(index){
+				case 1: hiddendescription();break;
 				case 2: occurdescription1();
-				hiddendescription();
 				break;
 				case 3: occurdescription2();
 				//hiddendescription1();
@@ -71,67 +71,69 @@ var frameCartoon1 = new FrameCartoon({
 // 	$('#page4Img').fadeIn(1000);
 //   }
 function hiddendescription1(){
-	$('#pOne').animate({marginTop:'100px',opacity:'0'},1000);
-	$('#h1One').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#pOne').animate({marginTop:'50px',opacity:'0'},1000);
+	$('#h1One').animate({marginTop:'50px',opacity:'0'},1000);
 }
 function hiddendescription2(){
-  $('#pTwo').animate({marginTop:'100px',opacity:'0'},1000);
-  $('#h1Two').animate({marginTop:'100px',opacity:'0'},1000);
+  $('#pTwo').animate({marginTop:'50px',opacity:'0'},1000);
+  $('#h1Two').animate({marginTop:'50px',opacity:'0'},1000);
   }
 function hiddendescription3(){
-	$('#pThree').animate({marginTop:'100px',opacity:'0'},1000);
-	$('#h1Three').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#pThree').animate({marginTop:'50px',opacity:'0'},1000);
+	$('#h1Three').animate({marginTop:'50px',opacity:'0'},1000);
   }
 function hiddendescription4(){
-	$('#pFour').animate({marginTop:'100px',opacity:'0'},1000);
-	$('#h1Four').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#pFour').animate({marginTop:'50px',opacity:'0'},1000);
+	$('#h1Four').animate({marginTop:'50px',opacity:'0'},1000);
   }
 function hiddendescription5(){
-	$('#pFive').animate({marginTop:'100px',opacity:'0'},1000);
-	$('#h1Five').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#pFive').animate({marginTop:'50px',opacity:'0'},1000);
+	$('#h1Five').animate({marginTop:'50px',opacity:'0'},1000);
   }
 function occurdescription1(){
-	$('#h1One').animate({marginTop:'0px',opacity:'1'},1000);
+	$('#h1One').animate({marginTop:'0px',opacity:'1'},500);
 	setTimeout('pOneFadeIn()',200);
   }
 function pOneFadeIn(){
-	$('#pOne').animate({marginTop:'10px',opacity:'1'},1000);
+	$('#pOne').animate({marginTop:'10px',opacity:'1'},500);
   }
 function occurdescription2(){
-	$('#h1Two').animate({marginTop:'0px',opacity:'1'},1000);
+	$('#h1Two').animate({marginTop:'0px',opacity:'1'},500);
 	setTimeout('pTwoFadeIn()',200);
   }
 function pTwoFadeIn(){
 	$('#pTwo').animate({marginTop:'10px',opacity:'1'},500);
   }
 function occurdescription3(){
-	$('#h1Three').animate({marginTop:'0px',opacity:'1'},1000);
+	$('#h1Three').animate({marginTop:'0px',opacity:'1'},500);
 	setTimeout('pThreeFadeIn()',200);
   }
 function pThreeFadeIn(){
-	$('#pThree').animate({marginTop:'10px',opacity:'1'},1000);
+	$('#pThree').animate({marginTop:'10px',opacity:'1'},500);
   }
 function occurdescription4(){
-	$('#h1Four').animate({marginTop:'0px',opacity:'1'},1000);
+	$('#h1Four').animate({marginTop:'0px',opacity:'1'},500);
 	setTimeout('pFourFadeIn()',200);
   }
 function pFourFadeIn(){
-  $('#pFour').animate({marginTop:'10px',opacity:'1'},1000);
+  $('#pFour').animate({marginTop:'10px',opacity:'1'},500);
   }
 function occurdescription5(){
-	$('#h1Five').animate({marginTop:'0px',opacity:'1'},1000);
+	$('#h1Five').animate({marginTop:'0px',opacity:'1'},500);
 	setTimeout('pFiveFadeIn()',200);
   }
 function pFiveFadeIn(){
-  $('#pFive').animate({marginTop:'10px',opacity:'1'},1000);
+  $('#pFive').animate({marginTop:'10px',opacity:'1'},500);
   }
 function hiddendescription(){
-	$('#pTwo').animate({marginTop:'100px',opacity:'0'},1000);
-	$('#h1Two').animate({marginTop:'100px',opacity:'0'},1000);
-	$('#pThree').animate({marginTop:'100px',opacity:'0'},1000);
-	$('#h1Three').animate({marginTop:'100px',opacity:'0'},1000);
-	$('#pFour').animate({marginTop:'100px',opacity:'0'},1000);
-	$('#h1Four').animate({marginTop:'100px',opacity:'0'},1000);
-	$('#pFive').animate({marginTop:'100px',opacity:'0'},1000);
-	$('#h1Five').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#pOne').animate({marginTop:'50px',opacity:'0'},1000);
+	$('#h1One').animate({marginTop:'50px',opacity:'0'},1000);
+	$('#pTwo').animate({marginTop:'50px',opacity:'0'},1000);
+	$('#h1Two').animate({marginTop:'50px',opacity:'0'},1000);
+	$('#pThree').animate({marginTop:'50px',opacity:'0'},1000);
+	$('#h1Three').animate({marginTop:'50px',opacity:'0'},1000);
+	$('#pFour').animate({marginTop:'50px',opacity:'0'},1000);
+	$('#h1Four').animate({marginTop:'50px',opacity:'0'},1000);
+	$('#pFive').animate({marginTop:'50px',opacity:'0'},1000);
+	$('#h1Five').animate({marginTop:'50px',opacity:'0'},1000);
 }
