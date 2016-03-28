@@ -28,7 +28,9 @@ $(document).ready(function(){
 			// 	occurFixedImg();
 			// }
 			switch(index){
-				case 2: occurdescription1();hiddendescription();break;
+				case 2: occurdescription1();
+				hiddendescription();
+				break;
 				case 3: occurdescription2();
 				//hiddendescription1();
 				break;
@@ -56,19 +58,6 @@ var frameCartoon1 = new FrameCartoon({
         });
         frameCartoon1.start();
 });
-var span = document.getElementsByTagName('span');
-span[0].onclick = function(){
-	location.href='#Page2';
-};
-span[1].onclick = function(){
-	location.href='#Page3';
-};
-span[2].onclick = function(){
-	location.href='#Page4';
-};
-span[3].onclick = function(){
-	location.href='#Page5';
-};
 // function hiddenFixedImg(){
 // 	$('#fixedImg').fadeOut(1000);
 // }
@@ -82,67 +71,67 @@ span[3].onclick = function(){
 // 	$('#page4Img').fadeIn(1000);
 //   }
 function hiddendescription1(){
-  $('#pOne').fadeOut();
-  $('#h1One').fadeOut();
-  }
+	$('#pOne').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#h1One').animate({marginTop:'100px',opacity:'0'},1000);
+}
 function hiddendescription2(){
-  $('#pTwo').fadeOut();
-  $('#h1Two').fadeOut();
+  $('#pTwo').animate({marginTop:'100px',opacity:'0'},1000);
+  $('#h1Two').animate({marginTop:'100px',opacity:'0'},1000);
   }
 function hiddendescription3(){
-  	$('#pThree').fadeOut();
-	$('#h1Three').fadeOut();
+	$('#pThree').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#h1Three').animate({marginTop:'100px',opacity:'0'},1000);
   }
 function hiddendescription4(){
-  	$('#pFour').fadeOut();
-	$('#h1Four').fadeOut();
+	$('#pFour').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#h1Four').animate({marginTop:'100px',opacity:'0'},1000);
   }
 function hiddendescription5(){
-	$('#pFive').fadeOut();
-	$('#h1Five').fadeOut();
+	$('#pFive').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#h1Five').animate({marginTop:'100px',opacity:'0'},1000);
   }
 function occurdescription1(){
-	$('#h1One').fadeIn(500);
+	$('#h1One').animate({marginTop:'0px',opacity:'1'},1000);
 	setTimeout('pOneFadeIn()',200);
   }
 function pOneFadeIn(){
-	$('#pOne').fadeIn(500);
+	$('#pOne').animate({marginTop:'10px',opacity:'1'},1000);
   }
 function occurdescription2(){
-	$('#h1Two').fadeIn(500);
+	$('#h1Two').animate({marginTop:'0px',opacity:'1'},1000);
 	setTimeout('pTwoFadeIn()',200);
   }
 function pTwoFadeIn(){
-	$('#pTwo').fadeIn(500);
+	$('#pTwo').animate({marginTop:'10px',opacity:'1'},500);
   }
 function occurdescription3(){
-	$('#h1Three').fadeIn(500);
-  setTimeout('pThreeFadeIn()',200);
+	$('#h1Three').animate({marginTop:'0px',opacity:'1'},1000);
+	setTimeout('pThreeFadeIn()',200);
   }
 function pThreeFadeIn(){
-	$('#pThree').fadeIn(500);
+	$('#pThree').animate({marginTop:'10px',opacity:'1'},1000);
   }
 function occurdescription4(){
-	$('#h1Four').fadeIn(500);
+	$('#h1Four').animate({marginTop:'0px',opacity:'1'},1000);
 	setTimeout('pFourFadeIn()',200);
   }
 function pFourFadeIn(){
-  $('#pFour').fadeIn(500);
+  $('#pFour').animate({marginTop:'10px',opacity:'1'},1000);
   }
 function occurdescription5(){
-	$('#h1Five').fadeIn(500);
-  setTimeout('pFiveFadeIn()',200);
+	$('#h1Five').animate({marginTop:'0px',opacity:'1'},1000);
+	setTimeout('pFiveFadeIn()',200);
   }
 function pFiveFadeIn(){
-  $('#pFive').fadeIn(500);
+  $('#pFive').animate({marginTop:'10px',opacity:'1'},1000);
   }
 function hiddendescription(){
-	$('#h1Two').fadeOut();
-	$('#h1Three').fadeOut();
-	$('#h1Four').fadeOut();
-	$('#h1Five').fadeOut();
-	$('#pTwo').fadeOut();
-	$('#pThree').fadeOut();
-	$('#pFour').fadeOut();
-	$('#pFive').fadeOut();
+	$('#pTwo').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#h1Two').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#pThree').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#h1Three').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#pFour').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#h1Four').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#pFive').animate({marginTop:'100px',opacity:'0'},1000);
+	$('#h1Five').animate({marginTop:'100px',opacity:'0'},1000);
 }

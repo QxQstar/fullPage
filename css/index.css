@@ -30,11 +30,15 @@ body{
 	position:relative; left:20%; top: 0;
 }
 .description{
-	position:absolute; top:30%; left:50%;color: #ffffff;
-	font-size: 20px; font-weight: 300; font-family: '宋体';
+	position:absolute; top:35%;left:50%;color: #ffffff; height: 500px;
+	font-size: 20px; font-weight: 100; font-family: '微软雅黑';
+}
+.description h1{
+	 width: 300px;
+	font-weight:300; font-size: 30px;
 }
 .description p{
-	width: 300px; margin-top: 20px; line-height: 35px;
+	width: 400px; margin-top: 10px; line-height: 35px;
 }
 .section1{
 	background: url('../img/p1.jpg') no-repeat;
