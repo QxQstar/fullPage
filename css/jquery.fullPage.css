@@ -139,6 +139,7 @@ html.fp-enabled,
 }
 #fp-nav ul li a,
 .fp-slidesNav ul li a {
+    color: #ffffff;
     display: block;
     position: relative;
     z-index: 1;
@@ -164,7 +165,7 @@ html.fp-enabled,
     height: 4px;
     width: 4px;
     border: 0;
-    background: #333;
+    background: #ffffff;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
