@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>FullPage fixed</title>
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel='stylesheet' type='text/css' media='screen and (max-width: 799px)' href='css/mobile.css'>
+	<link rel='stylesheet' type='text/css' media='screen and (max-width: 1600px) and (min-width: 1399px)' href='css/normal.css'>	
 </head>
 <body>
 	<div class='nav' id='nav'>
@@ -15,51 +18,94 @@
 			<li><a href="#">four</a></li>
 		</ul>
 	</div>
+	<div id='fixedImg'class='fixedImg'>
+		<img src='img/beizi.png'>
+	</div>
+	<div id='page3Img' class='page3Img'>
+		<img src="img/shiwai/beizi.png" >
+	</div>
+	<div id='page4Img' class='page4Img'>
+		<img src="img/outdoor/beizi.png"  >
+	</div>
+	<div id='page5Img' class='page5Img'>
+		<img src="img/chartlet/beizi.png">
+	</div>
 	<div id='fullPage' class='fullPage'>
-		<div class='section' style="background-color:#afc0d0">
-			<div id="section1"></div>
+		<div class='section' style="background-color:#afc0d0;z-index:-1">
+			<div id="section1">
+				<img id='img' src="img/title.png">
+			</div>
+			<span class='down' id='down1'><img src="img/down.png" width='10%'></span>
 		</div>
 		<div class="section section1">
-			<div class='description description1'>
+			<div class='description description1' style='z-index:3;'>
 				<h1 id='h1One'>握住，就够了</h1>
 				<p id='pOne'>上班，打开杯盖，迈开步子，接水，返回办公位，放在桌上，拿起喝一口，对于手来说握住就够了，握住一只himetal水杯。</p>
+				<a href='http://www.xiaoyu4.com/page.aspx?id=27&classid=1' target='_blank'><img src="img/go.png" id='imgOne'></a>
 			</div>
-			<!-- <div class='pic'>
-			<img src="img/000000000105837797_1_400x400.png" >
-			</div> -->
-			<!-- <img src="img/9773cec8e2c362ef312d7782fc4a295f.jpg" class='img1'> -->
-			<!-- <span class='down'>下一页</span> -->
+			<div class='pic11'>
+				<img src="img/office/SHU.png">
+			</div>
+			<div class='pic12' style='z-index:0;'>
+				<img src="img/office/jianpan.png">
+			</div>
+			<span class='down' id='down2'><img src="img/down.png" width='10%'></span>
 		</div>
-		<div class="section section2">
-			<div class='description description2'>
-
+		<div class="section section2" >
+			<div class='description description2' style='z-index:3;'>
 				<h1 id='h1Two'>碰倒，没关系</h1>
 				<p id='pTwo'>回家，家里有大人，有小孩，有小动物，而它不会烫，不会冻，不会碎，只会始终的从容，来自himetal水杯</p>
+				<a href='http://www.xiaoyu4.com/page.aspx?id=27&classid=1' target='_blank'><img src="img/go.png" id='imgTwo'></a>
 			</div>
-
-			<!-- <span class='down'>下一页</span> -->
+			<div class='pic21' style='z-index:0;'>
+				<img src="img/home/sofa.png" width='300%'>
+			</div>
+			<div class='pic22' style='z-index:0;'>
+				<img src="img/home/bowl.png">
+			</div >
+			<div class='pic23' style='z-index:0;'>
+				<img src="img/home/control.png">
+			</div>
+			<span class='down' id='down3'><img src="img/down.png" width='10%'></span>
 		</div>
 		<div class="section section3">
-			<div class='description description3'>
+			
+			<div class='description description3' style='z-index:3;'>
 				<h1 id='h1Three'>就这样，陪你</h1>
 				<p id='pThree'>室外，在看书，在冥想，在聚会，在放空，都不妨放一只himetal水杯在身边，因为只要你想起喝一口，它都是好好的。</p>
+				<a href='http://www.xiaoyu4.com/page.aspx?id=28&classid=1' target='_blank'><img src="img/go.png" id='imgThree'></a>
 			</div>
-			<div class='pic3'>
-			<img src="img/000000000105837797_1_400x400.png" >
+			<div class='pic32' style='z-index:0;'>
+				<img src="img/shiwai/sugor.png">
 			</div>
-			<!-- <span class='down'>下一页</span> -->
+			<div class='pic31' style='z-index:0;'>
+				<img src="img/shiwai/yizi.png">
+			</div>
+			
+			<span class='down' id='down4' ><img src="img/down.png" width='10%'></span>
 		</div>
 		<div class="section section4">
-				<div class='description description4'>
-					<h1 id='h1Four'>去哪儿，都行</h1>
-					<p id='pFour'>外出，剧烈摇晃，行；<br>12小时保温，行；<br>方便开启，行，方便便清洗，行；<br>没有茶垢，行。<br>带上himetal运动杯，去哪儿都行。</p>
-				</div>
-				<!-- <span class='down'>下一页</span> -->
+			<div class='description description4' style='z-index:3;'>
+				<h1 id='h1Four'>去哪儿，都行</h1>
+				<p id='pFour'>外出，剧烈摇晃，行；<br>12小时保温，行；<br>方便开启，行，方便便清洗，行；<br>没有茶垢，行。<br>带上himetal运动杯，去哪儿都行。</p>
+				<a href='http://www.xiaoyu4.com/page.aspx?id=26&classid=1' target='_blank'><img src="img/go.png" id='imgFour'></a>
+			</div>
+			<div class='pic42' style='z-index:0;'>
+				<img src="img/outdoor/bag.png" width='100%'>
+			</div>
+			<div class='pic41' style='z-index:0;'>
+				<img src="img/outdoor/tent.png">
+			</div>
+				<span class='down' id='down5'><img src="img/down.png" width='10%'></span>
 		</div>
 		<div class="section section5">
-			<div class='description description5'>
+			<div class='description description5' style='z-index:3;'>
 				<h1 id='h1Five'>标识图案，你的杯子</h1>
 				<p id='pFive'>你的，却在同事、亲戚、朋友一起时偶尔不经意的拿错，怎么证明？有了himetal个性印图，你将拥有真正属于你自己的品牌水杯。</p>
+				<a href='http://www.xiaoyu4.com/Single.aspx?m=index-1' target='_blank'><img src="img/go.png" id='imgFive'></a>
+			</div>
+			<div class='pic51' style='z-index:0;'>
+				<img src="img/chartlet/chart.png">
 			</div>
 		</div>
 	</div>
@@ -67,8 +113,9 @@
 	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 	 <!-- <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script> -->
 	 <script type="text/javascript" src='js/jquery.color.js'></script>
-	<script type="text/javascript" src='js/frameCartoon.js'></script>
-	 <script type="text/javascript" src='js/move.min.js'></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	 
+	<!--  // <script type="text/javascript" src='js/move.min.js'></script> -->
+	 <script type="text/javascript" src='js/frameCartoon.js'></script>
+	 <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

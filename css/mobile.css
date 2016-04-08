@@ -1,0 +1,65 @@
+
+@media screen and (max-width:799px){
+	 #section1 img{
+		width:94%; height: 190px; /*margin-right: 20px;*/ 
+	}
+	#section1{
+		width:320px;
+	}
+
+	.fixedImg,.page3Img,.page4Img,.page5Img{
+	position: fixed;left:20%; top:35%; 
+	}
+	.fixedImg img,.page3Img img{
+	width: 57px; height: 100px
+	}
+	.page4Img img,.page5Img img{
+	  width: 77px; height: 117px;
+	}
+	.description{
+		position:absolute; left: 45%; top:35%; width:200px; font-size: 10px; font-family:  myFont
+	}
+	.description img{
+		width: 100px; margin-top:10px;margin-left: 0;
+	}
+	.description h1{
+		 width: 150px;
+		font-weight: bold; font-size: 15px;
+	}
+	.description p{
+		width: 150px; margin-top: 0px; line-height: 13px; font-size:10px;
+	}
+	/*.pic32,.pic41{
+		width:20%;height:20%;
+	}
+	.pic51{
+		width: 100%;height: 100%;
+	}
+	.pic12{
+		width:5%; height:5%;
+	}*/
+	/*.pic42 {width:514px; height:658px;}
+	.pic31 {width:749px;height:999px;}
+	.pic21 { width:672px; height:402px;}
+	.pic22 {width:447px;height:426px; }
+	.pic23 {width:261px; height:318px;}
+	.pic11 { width:354px; height:252px;}*/
+	/*.pic42 img{width:10%;}
+	.pic31 img{width:5%; 
+		left:85%;}
+	.pic21 img{width:10%;}
+	.pic22 img{width:10%;
+		left:85%;}
+	.pic23 img{width:10%;}
+	.pic11 img{width:10%;}*/
+	.pic11 img{width: 30px; height: 15px;}	
+	.pic12 img{width: 450px; height: 300px;}
+	.pic21 img{width: 100px;height: 80px;}
+	.pic22 img{width: 80px;height: 70px;}
+	.pic23 img{width: 80px;height: 70px;}
+	.pic31 img{width: 150px; height:500px;}
+	.pic32 img{width: 400px;height: 100px;}
+	.pic41 img{width: 300px;height: 150px;}
+	.pic42 img{width: 50px;height: 45px;}
+	.pic51 img{width: 400px; height: 400px;}
+}

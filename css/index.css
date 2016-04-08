@@ -1,11 +1,23 @@
+@font-face
+{
+font-family: myFont;
+src: url('lantingGBKMobil.ttf'),
+     url('Sansation_Light.eot'); /* IE9+ */
+}
 *{
 	padding:0; margin:0;
 }
 body{
-	position: relative;
+	position: relative; 
+	background-color:#8DA8C0;
 }
-.fixedImg{
-	position: fixed;top: 30%;left: 20%;
+/*img{opacity: 0;}*/
+
+.fixedImg,.page3Img{
+	position: fixed;top: 30%;left: 33%; opacity: 0;
+}
+ #section1 #img{
+	margin:50px auto 0 auto;z-index:1;
 }
 .nav{
 	position:fixed; top:0;left:0; background-color:rgba(0,0,0,0); height:50px;
@@ -17,6 +29,7 @@ body{
 .navList li{
 	float:left; list-style:none; width:25%;text-align:center;
 }
+
 .navList a{
 	color:#ffffff; font-size:20px; 
 }
@@ -26,49 +39,39 @@ body{
 .clearfix:after{
 	content:"."; clear:both; line-height:0; height:0; visibility:hidden;
 }
-.page4Img{
-	position:relative; left:20%; top: 0;
+.page4Img,.page5Img{
+	position: fixed;top: 20%;left: 33%; opacity: 0;
 }
 .description{
-	position:absolute; top:35%;left:50%;color: #ffffff; height: 500px;
-	font-size: 20px; font-weight: 100; font-family: '微软雅黑';
+	position:absolute; top:35%;left:50%;color:#444; width: 400px;
+	font-size: 20px; font-weight: 300; font-family: myFont;
+
+}
+.description img{
+	margin-top:10%; margin-left:0; 
+}
+.description5{
+	left:48%; top:33%;
+}
+.description4{
+	left: 50%; top:30%;
 }
 .description h1{
 	 width: 300px;
-	font-weight:300; font-size: 30px;
+	font-weight: bold; font-size: 28px;
 }
 .description p{
 	width: 400px; margin-top: 10px; line-height: 35px;
 }
-.section1{
-	background: url('../img/p1.jpg') no-repeat;
-	background-size: cover;
-}
-.section2{
-	background: url('../img/p2.jpg') no-repeat;
-	background-size: cover;
-}
-.section3{
-	background: url('../img/p3.jpg') no-repeat;
-	background-size: 100%;
-}
-.section4{
-	background: url('../img/p4.jpg') no-repeat;
-	background-size: cover;
-}
-.section5{
-	background: url('../img/p5.jpg') no-repeat;
-	background-size: cover;
+#h1One,#pOne,#h1Two,#pTwo,#pThree,#h1Three,#pFour,#h1Four,#pFive,#h1Five{
+	opacity: 0; margin-top: 50px;
 }
 .down{
-	position:relative;top: 95%;left: 50%; display: inline-block;
-	color: #ffffff;
-	font-size: 15px;
-	height: 20px;
-	cursor: pointer;
+	position: absolute;top:85%;left: 45%;display: inline-block;color: #666;
+	font-size: 15px;height: 20px;cursor: pointer; z-index: 10; opacity: 0;
 }
 #section1{
-			z-index: 99;
+			z-index: 0;
             width: 824px;
             position: absolute;
             top: 15%;
@@ -76,3 +79,53 @@ body{
             margin-left: -412px;
 
 }
+#img{
+	opacity: 0;
+}
+/*.pic11,.pic12,.pic21,.pic22,.pic23,.pic31,.pic32,.pic33,.pic41,.pic42,.pic51{
+	position:absolute; opacity: 0;
+}*/
+.pic11{ position:absolute; opacity: 0;top:60%;left:75%;}
+.pic12{position:absolute; opacity: 0;top:50%;left:0;}
+.pic21{position:absolute; opacity: 0;top:60%;left:65%;}
+.pic22{position:absolute; opacity: 0;top:100%;left:75%;}
+.pic23{position:absolute; opacity: 0;top:100%;left:0;}
+.pic31{position:absolute; opacity: 0;top:50%;left:62%;}
+.pic32{position:absolute; opacity: 0;top:100%;left:0;}
+.pic41{position:absolute; opacity: 0;top:100%;left:-5%;}
+.pic42{position:absolute; opacity: 0;top:50%;left:80%;}
+.pic51{position:absolute; opacity: 0;top:70%;left:0;}
+#imgOne,#imgTwo,#imgThree,#imgFour,#imgFive{opacity: 0;}
+@media (min-width:800px) and (max-width:1400px){
+	.fixedImg,.page3Img,.page4Img,.page5Img{
+		left: 25%; top:17%; width:210px;
+	}
+	.description h1{
+		 width: 300px;
+		font-weight: bold; font-size: 25px;
+	}
+	.description p{
+		width: 400px; margin-top: 10px; line-height: 35px; font-size:17px;
+	}
+	.pic32,.pic41,.pic51{
+		width:75%;height:75%;
+	}
+	.pic12{
+		width:50%; height:50%;
+	}
+	.pic31{position:absolute; opacity: 0;top:50%;left:70%;width:749px;height:999px;}
+	.pic42 {width:514px; height:658px;}
+/*	.pic31 {}*/
+	.pic21 { width:672px; height:402px;}
+	.pic22 {width:447px;height:426px; }
+	.pic23 {width:261px; height:318px;}
+	.pic11 { width:354px; height:252px;}
+	.pic42 img{width:75%;}
+	.pic31 img{width:75%; 
+		left:85%;}
+	.pic21 img{width:75%;}
+	.pic22 img{width:75%;
+		left:85%;}
+	.pic23 img{width:75%;}
+	.pic11 img{width:75%;}
+}	
