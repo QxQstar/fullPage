@@ -216,6 +216,7 @@ function  hiddendescription(index,page){
  			$('#pFive').animate({marginTop:'50px',opacity:'0'},1000);
 		 	$('#h1Five').animate({marginTop:'50px',opacity:'0'},1000);
 		 	$('#imgFive').animate({opacity:'0'},1000);
+		 	$('#imgSix').animate({opacity:'0'},1000);
 		 	if(page == 5 ){
 		 		$('.pic51').animate({top:'65%',opacity:'0'},500);
 		 		}
@@ -304,6 +305,7 @@ function pFadeIn(index){
 		case 6:
 			$('#pFive').animate({marginTop:'10px',opacity:'1'},200);
 			$('#imgFive').animate({opacity:'1'},500);
+			$('#imgSix').animate({opacity:'1'},500);
 			break;
 	}
 }
