@@ -24,27 +24,10 @@ $(document).ready(function(){
 	        var imgsrc = '/template/default/img/page2.png';
 	    }
 <<<<<<< HEAD
-	    //改动开始
-	    $('#warp').hover(function(){
-	    	// alert($('body').outerWidth());
-	    	var $nav = $('.nav');
-	    	var $inter = $nav.find('#inter');
-	    	$inter.outerWidth($('body').outerWidth());
-			$inter.slideDown(400);
-	    	// $('#inter').stop(false,true).animate({opacity:1},200);
-	    	$nav.stop(false,true).animate({'backgroundColor':'rgba(0,0,0,0.3)'},50);
-	    	 // $inter.animate({'backgroundColor':'rgba(0,0,0,0.3)'},500);
-	    	
-	    	
-	    },function(){
-	    	var $nav = $('.nav');
-	    	var $inter = $nav.find('#inter');
-	    	// $('#inter').stop(false,true).animate({opacity:0},200);
-	    	$inter.slideUp(400,function(){
-	    		$nav.stop(false,true).animate({'backgroundColor':'rgba(0,0,0,0)'},400);
-	    	});
-	    });
-	    //改动结束
+<<<<<<< HEAD
+	   
+=======
+>>>>>>> origin/master
 =======
 >>>>>>> origin/master
 	$("#fullPage").fullpage({
@@ -101,6 +84,21 @@ $(document).ready(function(){
 			}
 		},
 	});
+	//改动开始
+	    $('#warp').hover(function(){
+	    	var $nav = $('.nav');
+	    	var $inter = $nav.find('#inter');
+	    	$inter.outerWidth($('body').outerWidth());
+			$inter.slideDown(400);
+	    	$nav.stop(false,true).animate({'backgroundColor':'rgba(0,0,0,0.3)'},50);
+	    },function(){
+	    	var $nav = $('.nav');
+	    	var $inter = $nav.find('#inter');
+	    	$inter.slideUp(400,function(){
+	    		$nav.stop(false,true).animate({'backgroundColor':'rgba(0,0,0,0)'},400);
+	    	});
+	    });
+	    //改动结束
 var frameCartoon1 = new FrameCartoon({
             el: '#section1',
             frameNum: 12,
