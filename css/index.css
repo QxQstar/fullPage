@@ -21,7 +21,7 @@ body{
 }
 .nav{
 	position:fixed; top:0;left:0; background-color:rgba(0,0,0,0); height:50px;
-	line-height:50px; width:100%;
+	line-height:50px; width:100%; z-index: 1000;
 }
 .navList{
 	width:50%; margin:0 auto;
@@ -30,9 +30,49 @@ body{
 	float:left; list-style:none; width:25%;text-align:center;
 }
 
-.navList a{
+.navList a,li{
 	color:#ffffff; font-size:20px; 
 }
+/*改动开始*/
+.warp{
+	cursor:pointer;
+}
+.inter{
+	position: absolute;
+	top:50px;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	padding-left: 25%;
+	padding-top: 10px;
+	background-color: rgba(0,0,0,0.3);
+}
+.inter li{
+	float: left;
+	display: inline-block;
+	width: 20%;
+	min-width: 100px;
+}
+.inter li a{
+	display: block;
+	font-size: 14px;
+	color: #444444;
+
+	text-decoration: none;
+}
+.inter li a img{
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
+.inter li a:hover img{
+	outline: 1px solid #555;
+}
+.warp:hover .nav{
+	background-color:#ccc;
+}
+/*改动结束*/
 .clearfix{
 	zoom:1;
 }
