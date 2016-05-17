@@ -23,13 +23,6 @@ $(document).ready(function(){
 	    else{
 	        var imgsrc = '/template/default/img/page2.png';
 	    }
-<<<<<<< HEAD
-<<<<<<< HEAD
-	   
-=======
->>>>>>> origin/master
-=======
->>>>>>> origin/master
 	$("#fullPage").fullpage({
 		anchors:['Page0','Page1', 'Page2','Page3','Page4','Page5'],
 		navigation: true,
@@ -115,12 +108,33 @@ var frameCartoon1 = new FrameCartoon({
         frameCartoon1.start();
         var span = document.getElementsByTagName('span');
         var len = span.length;
-        for(var i = 0;i < len;i++){
+        // for(var i = 0;i < len;i++){
+        // 	span[i].onclick = function(){
+        // 		var page = location.href.split('#');
+        // 		var num = parseInt(page[1].split('')[4])+1;
+        // 		location.href='#Page'+num;
+        // 	}
+        // }
+         for(var i = 0;i < len;i++){
+
         	span[i].onclick = function(){
-        		var page = location.href.split('#');
-        		var num = parseInt(page[1].split('')[4])+1;
-        		location.href='#Page'+num;
-        	}
+
+         		var page = location.href.split('#');
+
+         		if(typeof page[1] == 'undefined'){
+
+         			location.href = page[0]+ '#Page1';
+
+         		}else{
+
+         			var num = parseInt(page[1].split('')[4])+1;
+
+        			location.href=page[0]+'#Page'+num;
+
+        		}
+
+        	};
+
         }
         browserRedirect();  
     });
